@@ -102,9 +102,9 @@
       "required": true
     },
     "DEBUG_MODE": {
-      "description": "DEBUG_MODE (no need)",
-      "value": "False",
-      "required": false
+      "description": "DEBUG_MODE",
+      "value": "True",
+      "required": true
     },
     "DEBUG_MODE": {
       "description": "DEBUG_MODE",
