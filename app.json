@@ -1,0 +1,135 @@
+{
+  "name": "Sophie-Bot",
+  "description": "Sophie is modern and fast Telegram chat manager bot",
+  "keywords": [
+    "telegram",
+    "Sophie",
+    "plugin",
+    "Bot",
+    "wiki"
+  ],
+  "repository": "https://github.com/Kunal-Diwan/Sophie-Bot",
+  "website": "sophiebot.rocks/",
+  "success_url": "https://t.me/SophieNEWS",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "https://github.com/heroku/heroku-buildpack-python"
+   }     
+  ],    
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "",
+      "required": true
+    },
+    "APP_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "Create A Database In Mongodb And Get URL",
+      "value": "",
+      "required": true
+      
+    },
+    "ARQ_API": {
+      "description": "Get this from @ARQRobot",
+      "value": "",
+      "required": true
+      
+    },
+    "MONGO_PORT": {
+      "description": "Dont change",
+      "value": "27017",
+      "required": false
+    },
+    "MONGO_DB": {
+      "description": "Don't change.",
+      "value": "sophie",
+      "required": true
+    },
+    "API_PORT": {
+      "description": "Don't change.",
+      "value": "8080"
+    },
+    "REDIS_URI": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
+    "REDIS_PORT": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
+    "REDIS_PASS": {
+      "description": "Get from redislabs.com",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Id",
+      "value": "",
+      "required": true
+    },
+    "OPERATORS": {
+      "description": "Space seperated list of members for operating bot",
+      "value": "",
+      "required": true
+    },
+    "SUPPORT_CHAT": {
+      "description": "support chat id",
+      "value": "",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "For gbans",
+      "value": "",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "get from elephantsql.com",
+      "value": "",
+      "required": true
+    },
+    "SW_API": {
+      "description": "Spamwatch api @SpamWatchBot",
+      "value": "",
+      "required": true
+    },
+    "DEBUG_MODE": {
+      "description": "DEBUG_MODE (no need)",
+      "value": "False",
+      "required": false
+    },
+    "DEBUG_MODE": {
+      "description": "DEBUG_MODE",
+      "value": "True",
+      "required": true
+    },
+    "LOAD_MODULES": {
+      "description": "Don't edit",
+      "value": "True",
+      "required": true
+    },
+    "LOGS_CHANNEL_ID": {
+      "description": "Id of your log group/channel",
+      "value": "",
+      "required": true
+    },
+    "ALLOW_FORWARDS_COMMANDS": {
+      "description": "ALLOW_FORWARDS_COMMANDS",
+      "value": "False",
+      "required": false
+    },
+    "TOKEN": {
+      "description": "Tg bot token by @BotFarther",
+      "value": "",
+      "required": true
+    }
+  }
+}
